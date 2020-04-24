@@ -1,0 +1,45 @@
+#TodoItem{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0 8px 8px;
+  &:first-child{
+    border-top: 1px solid #ddd;
+  }
+  &:hover{
+    background: #f9f9f9;
+  }
+  &.editing{
+    background: #fff3d2;
+  }
+  &.completed{
+    >.text{
+      text-decoration: line-through;
+      color: #a9a9a9;
+    }
+  }
+  >.text{
+    margin-left: 8px;
+  }
+  >.editing,>.text{
+    flex:1;
+  }
+  >.editing{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    >input{
+      width: 80%;
+      border: 0;
+      outline: none;
+      padding: 0;
+      background: transparent;
+    }
+    >.iconWrapper>.anticon{
+      margin-left: 4px;
+      color: #a9a9a9;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+#Statistics{
+  >ul{
+    display: flex;
+    >li{
+      border: 1px solid #e4e4e4;
+      flex:1;
+      height:102px;
+      cursor: pointer;
+      text-align: left;
+      font-size: 14px;
+      color: #666;
+      position: relative;
+    }
+  }
+  .title{
+        font-size: 14px;
+        color: #666;
+  }
+  p{
+    font-size: 12px;
+    line-height: 12px;
+    color: #999;
+    padding: 6px 0 2px;
+  }
+  .num{
+    font-size: 30px;
+    color: #666;
+    line-height: 34px;
+  }
+  .textHistory{
+    position: absolute;
+    padding: 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,33 @@
+.TomatoHistory{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 16px;
+  .dailyTomatoes{
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    display: flex;
+    >.summary{
+      width: 120px;
+      margin-right: 8px;
+      .date{
+        span:first-child{
+          margin-right: 4px;
+          color: #222;
+        }
+        span:last-child{
+          color:#888;
+          font-size: 12px;
+        }
+      }
+      .count{
+        font-size: 14px;
+        color: #888;
+      }
+    }
+    >.tomatoList{
+      width: 90%;
+    }
+  }
+}

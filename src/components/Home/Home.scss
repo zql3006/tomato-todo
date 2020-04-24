@@ -1,0 +1,29 @@
+#Home{
+  max-width: 1000px;
+  margin: 0 auto;
+  >header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    border-bottom: 1px solid #ddd;
+    padding: 16px 0 0;
+    >.logo{
+      width: 120px;
+      height: 36px;
+      position: relative;
+      >span{
+        font-size: 16px;
+        color: #666;
+        position: absolute;
+        top: 6px;
+        left: 40px;
+      }
+    }
+  }
+  >main{
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
