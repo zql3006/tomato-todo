@@ -31,6 +31,7 @@ class TodoInput extends React.Component<ITodoInputProps,ITodoInputState>{
         description:this.state.description
       })
       this.props.addTodo(response.data.resource)
+      this.setState({description:''})
     } catch (error) {
       throw new Error(error)
     }
